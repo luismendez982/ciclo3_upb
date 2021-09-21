@@ -15,15 +15,11 @@
     <br>
     <form id="form_nuevo_usuario" >
         <label for="nombre">Nombre de Usuario:</label>
-        <input type="text" id='"dato_nombre_usuario"'   name="user_name" />
+        <input type="text" id="dato_nombre_usuario" name="user_name" required="" pattern="[A-Za-z ]+"  >
         <label for="edad">Edad</label>
-        <input type="edad" id="dato_edad_usuario" name="edad" />
-        <!-- <br> -->
+        <input type="edad" id="dato_edad_usuario" name="edad" required="" pattern="[0-9]+" >
         <label for="contraseña">Contraseña</label>
-        <input type="password" id="dato_contrasena" name="contraseña"/>
-        <!-- <br> -->
-       
-        <!-- <br> -->
+        <input type="password" id="dato_contrasena" name="contraseña" required="" />
         <button id="enviar_registro">Enviar</button>
     </form>
 </body>
