@@ -1,14 +1,13 @@
 function validar_nombre_usuario (string){
 
-    if (string == string.toUpperCase() && string== string.trim()&& (string = capitalize(string))){
-        
+	
+	if (string===string.trim() && string[0]===string.charAt(0).toUpperCase()){
+        //&& string.length[0]==cadena.length[0])
         return true;
     }
+    
     return false;
-    // if (string =capitalize(string) && string== string.trim()){
-    //     return true;
-    // }
-    // return false;
+  
 }
 
 function validar_edad_usuario (edad){
